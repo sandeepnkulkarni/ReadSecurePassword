@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="ReadSecurePassword" default="build" basedir=".">
+
+	<target name="clean">
+		<exec executable="cmd" dir="${basedir}">
+			<arg value="/c" />
+			<arg value="build.bat" />
+			<arg value="Clean" />
+			<arg value="Release" />
+		</exec>
+	</target>
+
+	<target name="build">
+		<exec executable="cmd" dir="${basedir}">
+			<arg value="/c" />
+			<arg value="build.bat" />
+			<arg value="Build" />
+			<arg value="Release" />
+		</exec>
+	</target>
+
+	<target name="rebuild">
+		<exec executable="cmd" dir="${basedir}">
+			<arg value="/c" />
+			<arg value="build.bat" />
+			<arg value="Rebuild" />
+			<arg value="Release" />
+		</exec>
+	</target>
+
+</project>
